@@ -1,0 +1,63 @@
+.customer-pagination {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .customer-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.4rem;
+
+    th,
+    td {
+        vertical-align: top;
+        text-align: left;
+        padding: 8px;
+
+    }
+
+    th {
+        border-top: 2px solid var(--light-blue);
+        border-bottom: 2px solid var(--light-blue);
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+
+    .page-num {
+      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #007bff;
+        color: #fff;
+      }
+    }
+
+    .activePage {
+      background-color: #007bff;
+      color: #fff;
+      border-color: #007bff;
+    }
+  }
+}

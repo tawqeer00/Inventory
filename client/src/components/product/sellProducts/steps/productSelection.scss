@@ -1,0 +1,132 @@
+.product-selection {
+    padding: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #333;
+
+
+    .product-search{
+        width: 100%;
+        max-width: 400px;
+        padding: 0.8rem 1rem;
+        border-radius: 150px;
+        outline: none;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+
+
+  
+
+
+    
+  
+    .product-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-size: 14px;
+  
+      th,
+      td {
+        vertical-align: top;
+        text-align: left;
+        padding: 8px;
+      }
+  
+      th {
+        background-color: rgb(240, 237, 237);
+        border-top: 2px solid var(--light-blue);
+        border-bottom: 2px solid var(--light-blue);
+      
+      }
+              tr {
+          border-bottom: 1px solid rgb(235, 233, 233);
+          background-color: #ffffff;
+        }
+
+        tbody {
+            tr:hover {
+              cursor: pointer;
+              background-color: rgba(31, 147, 255, 0.3);
+            }
+          }
+  
+      .faded-row {
+        opacity: 0.5;
+      }
+  
+      .quantity-controls {
+        display: flex;
+        gap: 10px;
+  
+        input[type="number"] {
+          width: 60px;
+          padding: 5px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+        }
+  
+        input[type="checkbox"] {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+
+  
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+  
+      .page-num {
+        padding: 8px 14px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #fff;
+        font-size: 14px;
+  
+        &:hover {
+          background-color: #007bff;
+          color: white;
+        }
+  
+        &.activePage {
+          background-color: #007bff;
+          color: white;
+        }
+      }
+    }
+  
+    .cart-summary {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      color: grey;
+      font-size: 14px;
+  
+      ul {
+        list-style-type: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 10px;
+        }
+      }
+  
+      div {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+  
